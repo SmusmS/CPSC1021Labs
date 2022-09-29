@@ -31,14 +31,14 @@ public:
     }
 
     //Overloaded constructor for outPatient object
-    Patient(double userServices, double userMedication, char userPatientType) {
+    Patient(char userPatientType, double userServices, double userMedication) {
         services = userServices;
         medication = userMedication;
         patientType = userPatientType;
     }
 
     //Overloaded constructor for inPatient object
-    Patient(int userDays, double userRate, double userServices, double userMedication, char userPatientType) {
+    Patient(char userPatientType, int userDays, double userRate, double userServices, double userMedication) {
         days = userDays;
         rate = userRate;
         services = userServices;

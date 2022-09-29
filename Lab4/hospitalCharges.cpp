@@ -62,7 +62,7 @@ int main() {
         inPatient.setPatientType(patientType);
 
         //Create a new object using input variables
-        Patient patient(days, rate, services, medication, patientType);
+        Patient patient(patientType, days, rate, services, medication);
 
         //Output total costs
         cout << "Your total hospital bills is $" << fixed <<setprecision(2) << patient.calcTotalCharges();
